@@ -21,7 +21,7 @@
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 Mitsuri Robot is a python telegram bot running on sqlalchemy database .
-It's an [Emiko](https://github.com/nero-chi/EmikoRobot)Based Project
+It's an [Emiko](https://github.com/nero-chi/EmikoRobot) based Project
 
 It's a suitable group management bot for all kinds of chat groups in telegram
 
