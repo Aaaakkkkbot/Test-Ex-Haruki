@@ -20,7 +20,9 @@
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/HashiraAssociation/MitsuriRobot"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
-
+Mitsuri Robot is a python telegram bot running on sqlalchemy database .
+Themed anime : Demon Slayer
+It's a suitable group management bot for all kinds of chat groups in telegram
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?color=1C71FA&width=420&lines=Mitsuri+Robot+Is+Under+Development%E2%9C%8C%EF%B8%8F;Project+By+Hashira+Association%E2%9C%8C%EC%B8%8F">
