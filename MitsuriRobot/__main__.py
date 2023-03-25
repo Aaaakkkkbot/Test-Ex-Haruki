@@ -126,8 +126,8 @@ buttons = [
     ]
 ]
 
-GROUP_START_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
-DESTINY_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
+GROUP_START_IMG = "https://telegra.ph/file/9dd382e5f8e1174d2c84f.mp4"
+DESTINY_IMG = "hhttps://telegra.ph/file/9dd382e5f8e1174d2c84f.mp4"
 
 DONATE_STRING = """Glad to know that you wanna donate
 For supporting our work just join [HASHIRA](https://t.me/HASHIRA_ASSOCIATION) Thank you!!"""
@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "🩸 Hi {}\nI HAVEN[']({})t slePT yet, because I believe someone is left for me to eliminate.\n\n Subject Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
+            "🩸 Hi {}\nI Haven[']({})t slept yet, because I believe someone is left for me to eliminate.\n\n Subject Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
             parse_mode=ParseMode.MARKDOWN
        )
 
@@ -458,8 +458,8 @@ def unmei_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Hashira_Techdivision")
-                    InlineKeyboardButton(text="Logs", url="https://t.me/Hashira_Techlogs
+                    InlineKeyboardButton(text="Support", url="t.me/Hashira_Techdivision"),
+                    InlineKeyboardButton(text="Logs", url="https://t.me/Hashira_Techlogs"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
