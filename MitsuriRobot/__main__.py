@@ -95,13 +95,13 @@ PM_START_TEXT = """
 ➣ Users Interacted : `{}`
 ➣ Total Chats : `{}`
 
-🌉 Try The Help Button below To Know My Abilities[.](lah) ✟
+🌉 Try The Help Button below To Know My Abilities[.](https://telegra.ph/file/ac6a2c9157610985d3e4b.jpg) ✟
 """
 
 
 HELP_STRINGS = """
-Hello there, I'm Alucard! I'm from the anime HellSing.
-To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/92e9311faf3522fb74d3e.jpg)
+Hello there, I'm Mitsuri! I'm from the anime Demon slayer.
+To make me functional, make sure that I have enough rights in your group[.](https://telegra.ph/file/ac6a2c9157610985d3e4b.jpg)
 Helpful commands:
 
 - /start: It will starts me! You've probably used this, as you are here now.
@@ -110,19 +110,19 @@ Helpful commands:
 All commands can be used with the following: / !
 List of all the Modules:
 """.format(
-    dispatcher.bot.first_name, "" if not ALLOW_EXCL else "✟ All commands can either be used with / or !.")
+    dispatcher.bot.first_name, "" if not ALLOW_EXCL else " All commands can either be used with / or !.")
 buttons = [
     [
-        InlineKeyboardButton(text="Start Mission➕",url="https://telegram.dog/Alucard_Robot?startgroup=true"),
+        InlineKeyboardButton(text="Start Mission",url="https://telegram.dog/KanrojiMitsuriRobot?startgroup=New"),
         InlineKeyboardButton(text="Help⁉️", callback_data="help_back")
     ],
     [
-        InlineKeyboardButton(text="Support🚨", url="https://t.me/Hellsingorganisation"),
-        InlineKeyboardButton(text="Logs📊", url="https://t.me/HellSingQuaters")
+        InlineKeyboardButton(text="Support🚨", url="https://t.me/Hashira_Techdivision"),
+        InlineKeyboardButton(text="Logs📊", url="https://t.me/Hashira_TechLogs")
     ],
     [
-        InlineKeyboardButton(text="VARMINT",url="https://t.me/VARMINTs"),
-        InlineKeyboardButton(text="HYBRID",url="https://t.me/HYBRIDCLAN")
+        InlineKeyboardButton(text="Hashira Association",url="https://t.me/Hashira_Association"),
+        InlineKeyboardButton(text="Slayer Core",url="https://t.me/Slayer_System_Headquarters")
     ]
 ]
 
@@ -130,7 +130,7 @@ GROUP_START_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
 DESTINY_IMG = "https://telegra.ph/file/8b06d2fb52b5895384c57.mp4"
 
 DONATE_STRING = """Glad to know that you wanna donate
-For supporting our work just join [VARMINT](https://t.me/varmints) Thank you!!"""
+For supporting our work just join [HASHIRA](https://t.me/HASHIRA_ASSOCIATION) Thank you!!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "🩸 Hi {}\nI won[']({})t sleep yet, because I believe someone is left for me to eliminate.\n\n Mission Time - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
+            "🩸 Hi {}\nI HAVEN[']({})t slePT yet, because I believe someone is left for me to eliminate.\n\n Subject Uptime - {}".format(update.effective_user.first_name,GROUP_START_IMG,get_readable_time((time.time() - StartTime))),
             parse_mode=ParseMode.MARKDOWN
        )
 
@@ -331,7 +331,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="✟ Back to the Blackhole Sun ✟", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text=" Back", callback_data="help_back")]]
                 ),
             )
 
@@ -376,7 +376,7 @@ def unmei_about_callback(update, context):
     query = update.callback_query
     if query.data == "unmei_":
         query.message.edit_text(
-            text="๏ I'm *Alucard (Hellsing)*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Mitsuri*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -384,7 +384,7 @@ def unmei_about_callback(update, context):
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
             "\n\n_Unmei's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Unmei Bot.",
+            "\n\n Click on button bellow to get basic help for Mitsuri Bot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -398,7 +398,7 @@ def unmei_about_callback(update, context):
                     InlineKeyboardButton(text="Owner", callback_data="unmei_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://youtu.be/dQw4w9WgXcQ"),
+                    InlineKeyboardButton(text="Hashira Github", url="github.com/HshiraAssociation
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_back"),
@@ -458,8 +458,8 @@ def unmei_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/HellSingOrganisation"),
-                    InlineKeyboardButton(text="Logs", url="https://t.me/HellSingQuaters"),
+                    InlineKeyboardButton(text="Support", url="t.me/Hashira_Techdivision")
+                    InlineKeyboardButton(text="Logs", url="https://t.me/Hashira_Techlogs
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -473,16 +473,16 @@ def unmei_about_callback(update, context):
     elif query.data == "unmei_credit":
         query.message.edit_text(
             text=f"๏ Owner and Committee\n"
-            "\nHere is the Owner of Alucard and the Committee he owns",
+            "\nHere is the Owner of Mitsurihe Committee he owns",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
 		 [
-                    InlineKeyboardButton(text="Freak🎭", url="https://t.me/Freaking_tag"),
+                    InlineKeyboardButton(text="Hashira Admins", url="https://t.me/Hashira_Association/39"),
                  ],
                  [
-                    InlineKeyboardButton(text="Hunter Association", url="https://t.me/TheHunterAssociation"),
-                    InlineKeyboardButton(text="Committee", url="https://t.me/HunterCommittee"),
+                    InlineKeyboardButton(text="Hashira Association", url="Hashira_Assocoiation"),   
+                    InlineKeyboardButton(text="Official Group",url="https://t.me/omegaruby"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="unmei_"),
@@ -505,7 +505,8 @@ def Source_about_callback(update, context):
             "\n • `/musicplayer <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
             "\n\n๏ Command for all members."
             "\n • `/play` <query /reply audio> - Playing music via YouTube."
-            "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
+            "\n • `/playlist` - To playing a playlist of groups or your personal playlist"
+            "\n • Music System Powered By @KANROJIMITSURIROBOT,                      
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
