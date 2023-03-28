@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText
 
-from MItsuriRobot.modules.sql import BASE, SESSION
+from MitsuriRobot.modules.sql import BASE, SESSION
 
 
 class BlacklistUsers(BASE):
